@@ -75,12 +75,16 @@ nav li {
 
 }
 
+.banner-image-section{
+    width: 475px;
+    height: 475px;
+}
+
 .banner-image {
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
-    width: 475px;
-    height: 475px;
-    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 
 .banner-image img {
@@ -97,7 +101,7 @@ nav li {
     display: flex;
     gap: 25px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 60px;
     border-top: 2px solid #ececec;
     border-bottom: 2px solid #ececec;
@@ -117,13 +121,14 @@ nav li {
 .popular-collection-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 0px 50px;
+    gap: 40px;
+    padding: 0px 150px;
+    justify-content: center;
 }
 
 .popular-collection-details{
     padding: 15px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
 
@@ -184,7 +189,11 @@ nav li {
         flex-direction: column-reverse;
         text-align: center;
     }
-
+    .banner-image-section{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
     .banner-image {
         width: calc(max-width);
     }
@@ -197,6 +206,10 @@ nav li {
         flex-wrap: wrap;
         border-top: none;
         border-bottom: none;
+        justify-content: center;
+    }
+    .popular-collection-section{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -204,6 +217,10 @@ nav li {
 
 /* Medium Device */
 @media screen and (min-width:577px) and (max-width:992px) {
+
+    .container{
+        padding: 10px 30px;
+    }
     .header-section {
         flex-direction: column;
         align-items: center;
@@ -213,5 +230,28 @@ nav li {
     nav ul {
         flex-wrap: wrap;
         padding-left: 0px;
+    }
+    .banner-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-image-section{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .banner-image {
+        width: calc(max-width);
+    }
+
+    .website-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .popular-collection-section{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
