@@ -1,0 +1,217 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+/* defult styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.container {
+    margin: 10px 120px;
+    margin-bottom: 50px;
+    width: calc(100%-50px);
+}
+
+/* primary button */
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+
+}
+
+
+/* Header Styles */
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav li {
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+    list-style: none;
+}
+
+
+/* Banner section styels */
+.banner-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+
+
+.banner-title {
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 52px;
+    margin: 0px;
+}
+
+.banner-sub-title {
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.banner-image {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    width: 475px;
+    height: 475px;
+    background-position: center;
+}
+
+.banner-image img {
+    width: calc(max-width)
+}
+
+/* Website logo sections styles */
+
+.website-logo-section {
+    margin-top: 100px;
+}
+
+.website-logo {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-top: 2px solid #ececec;
+    border-bottom: 2px solid #ececec;
+
+}
+
+/* Popular Collection section */
+.popular-heading{
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.popular-collection-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0px 50px;
+}
+
+.popular-collection-details{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.popular-collection-details image{
+    width: 100%;
+}
+.products-title{
+    color: #18191F;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0px;
+}
+.price-title{
+    color: #18191F;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.rating-icon, .shifting-title{
+    color: #787885;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.filled, .half-filled{
+    color: #FB8200;
+}
+
+
+
+
+
+
+
+
+
+/* For Responsive */
+/* Small Device */
+@media only screen and (max-width:576px) {
+    .container {
+        margin: 10px 30px;
+    }
+
+
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-image {
+        width: calc(max-width);
+    }
+
+    .website-logo-section {
+        margin-top: 60px;
+    }
+
+    .website-logo {
+        flex-wrap: wrap;
+        border-top: none;
+        border-bottom: none;
+    }
+}
+
+
+
+/* Medium Device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .header-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        padding-left: 0px;
+    }
+}
